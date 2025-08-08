@@ -4,7 +4,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:lottie/lottie.dart';
 
 import '../../../../providers/providers.dart';
-import 'meal_detail_screen.dart';
+import '../widgets/recipe_detail_shimmer.dart';
+import 'recipe_detail_screen.dart';
 
 class MealDetailPage extends ConsumerWidget {
   final String id;

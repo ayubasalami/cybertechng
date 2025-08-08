@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:shimmer/shimmer.dart';
 
 import '../../data/models/featured_meal_model.dart';
-import '../views/meal_detail_page.dart';
+import '../views/recipe_detail_page.dart';
 
-class PromoBanner extends StatelessWidget {
+class FeaturedRecipeWidget extends StatelessWidget {
   final List<Meal> data;
-  const PromoBanner({super.key, required this.data});
+  const FeaturedRecipeWidget({super.key, required this.data});
 
   @override
   Widget build(BuildContext context) {
@@ -72,8 +72,8 @@ class PromoBanner extends StatelessWidget {
   }
 }
 
-class PromoBannerShimmer extends StatelessWidget {
-  const PromoBannerShimmer({super.key});
+class FeaturedRecipeShimmerWidget extends StatelessWidget {
+  const FeaturedRecipeShimmerWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
