@@ -69,7 +69,7 @@ lib/
 │           │   └── recipe_details_page.dart
 │           │
 │           ├── view_models/
-│           │   └── meal_search.view_model.dart  # Logic for searching meals
+│           │   └── meal_search.view_model.dart  # Logic for searching recipes
 │           │
 │           └── widgets/
 │               ├── app_search_bar.dart
@@ -77,7 +77,7 @@ lib/
 │               └── ... (reusable UI components)
 │
 ├── providers/                         # Global providers
-│   └── ...                            # (If applicable)
+│   └── ...                           
 │
 └── main.dart                          # App entry point
 
