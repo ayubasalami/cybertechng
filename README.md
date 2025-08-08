@@ -48,3 +48,45 @@ flutter pub get
 3. flutter run
 
 
+
+## App Project Structure 
+lib/
+├── core/
+│   └── network/
+│       └── dio_service.dart           # Handles API calls via Dio
+│
+├── features/
+│   └── recipe_finder/
+│       ├── data/
+│       │   ├── models/                # API response models
+│       │   └── repository/
+│       │       └── recipe_repository.dart  # Handles API interactions
+│       │
+│       └── presentation/
+│           ├── views/
+│           │   ├── search_screen.dart
+│           │   ├── recipe_details_screen.dart
+│           │   └── recipe_details_page.dart
+│           │
+│           ├── view_models/
+│           │   └── meal_search.view_model.dart  # Logic for searching meals
+│           │
+│           └── widgets/
+│               ├── app_search_bar.dart
+│               ├── search_screen_header.dart
+│               └── ... (reusable UI components)
+│
+├── providers/                         # Global providers
+│   └── ...                            # (If applicable)
+│
+└── main.dart                          # App entry point
+
+
+🧠 Search Logic Overview
+The app uses a MealSearchViewModel to handle user search interactions efficiently and responsively. When a user types into the search bar, the input is not immediately sent to the server. Instead, a short delay (called a debounce) is used to wait until the user stops typing before making the API call. This reduces unnecessary requests and improves performance.
+The view model communicates with the repository to fetch meals from the API based on the user’s search keyword. It also manages different UI states such as loading, error, and displaying results. This ensures that the user sees appropriate feedback depending on whether the app is fetching data, has results to show, or encounters an error.
+
+By centralizing this logic in the view model, the app remains modular, maintainable, and easy to test.
+
+
+
