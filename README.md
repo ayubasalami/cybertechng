@@ -7,10 +7,10 @@ A simple and elegant Flutter application built for the Cybertechng task. It allo
 ## 📸 Screenshots
 
 ### 🔍 Search Page
-![Search Page](assets/screenshots/search.png)
+![Search Page](assets/screenshots/search_page.png)
 
 ### 📋 Recipe Details
-![Details Page](assets/screenshots/details.png)
+![Details Page](assets/screenshots/details_page.png)
 
 ---
 
